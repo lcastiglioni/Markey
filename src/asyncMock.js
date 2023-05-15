@@ -7,9 +7,15 @@ const products = [
         stock: 5,
         descrition: 'Teclado RGB Gamer'
     },
-    {id: 2, name: 'Alnitak', price: '14000', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdTkcChKhy_C21BAZgQ33g6j9VnEkaSJLkSRE7JCS7SdEuwJ83vHyWgMwDomKk2f7B68&usqp=CAU', stock: 5, descrition: 'Teclado RGB Gamer 2'},
-    {id: 3, name: 'Mintaka', price: '20000', img: 'https://www.irrompibles.net/irrwp/wp-content/uploads/2020/12/Minatka1.jpg', stock: 5, descrition: 'Teclado RGB Gamer 3'}
+    {id: '2', name: 'Alnitak', price: '14000', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdTkcChKhy_C21BAZgQ33g6j9VnEkaSJLkSRE7JCS7SdEuwJ83vHyWgMwDomKk2f7B68&usqp=CAU', stock: 5, descrition: 'Teclado RGB Gamer 2'},
+    {id: '3', name: 'Mintaka', price: '20000', img: 'https://www.irrompibles.net/irrwp/wp-content/uploads/2020/12/Minatka1.jpg', stock: 5, descrition: 'Teclado RGB Gamer 3'}
 ]
+const category = [
+    {id: '1', name: 'Keyboards'},
+    {id: '2', name: 'Keycaps'},
+    {id: '3', name:'Accesories'}
+]
+
 
 export const getProducts = () => {
     return new Promise((resolve) => {
@@ -26,3 +32,12 @@ export const getProductsById = (productId) => {
         }, 500)
     })
 }
+
+export const getProductByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(category.find(categ => categ.id === categoryId))
+        }, 500)
+    })
+}
+
