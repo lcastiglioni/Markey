@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getProductsById } from "../../asyncMock";
 import ItemDetail from "../ItemDetail/ItemDetail"
-
+import React from "react";
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)

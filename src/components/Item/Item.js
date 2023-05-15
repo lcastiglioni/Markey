@@ -1,4 +1,5 @@
 import "./Item.css"
+import React from "react"
 
 const Item =({id, name, img, price, stock}) => {
     return(
