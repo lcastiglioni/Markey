@@ -1,15 +1,22 @@
 .CardItem {
-    color: aliceblue;
-    background-color: #1ABC9C;
+    color: rgb(219, 219, 219);
+    background-color: #252525;
     margin: 1rem;
     flex: 1 0 25rem;
     max-width: 20rem;
     max-height: 50rem;
     transition: 0.2s;
-    box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+    box-shadow: 0.5rem 0.75rem 1.5rem rgba(0, 0, 0, 0.596);
     display:grid;
+    border-radius: 1.5rem;
 }
 .ItemImg{
     width: 60%;
     height: auto;
+    border-radius: 0.5rem;
+}
+
+.ItemFooter > a{
+    text-decoration: none;
+    color:rgb(219, 219, 219);
 }

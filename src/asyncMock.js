@@ -3,7 +3,7 @@ const products = [
     id: "1",
     name: "Quarsar RGB",
     price: "7000",
-    img: "https://ibb.co/NSRvYCn",
+    img: "https://i.ibb.co/yS29sPB/quarsar.png",
     stock: 5,
     descrition: "Teclado RGB Gamer",
     category: "keyboards",
